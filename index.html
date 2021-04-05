@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Ajax</title>
+</head>
+<body>
+    <div id="formulario">
+        <form name="formulario" id="formdata" action="#">
+         <label for="nombre">Nombre:</label>
+            <input type="text" name:"Nombre" id="nombre">
+        
+        <label>Apellidos:
+            <input type="text" name:"Apellidos" id="apellidos">
+        </label>
+
+         <label>Edad: 
+            <input type="text" name:"Edad" id="edad"><br><br>
+        </label>
+        <label for="genero">Genero: 
+            <input type="radio" name="genero" id="hombre">Hombre
+            <input type="radio" name="genero" id="mujer"> Mujer
+            <input type="radio" name="genero" id="otros"> Otros
+        </label>
+        
+        <label for="dni">DNI: 
+            <input type="text" name:"dni" id="dni">
+        </label>
+
+        <label for="email">Email: 
+            <input type="email" name:"Email" id="email"><br><br>
+        </label>
+
+        <label for="Textarea">Escribe aquí:
+            <textarea name="Escribe aquí" id="textarea" cols="30" rows="10" required="required"></textarea><br><br>
+        </label>
+
+        <label for="Localidad">Localidad:
+        <select name="Localidad" id="select"><br>
+            <option value="SMRA">SMRA</option>
+            <option value="Langreo">Langreo</option>
+            <option value="Laviana">Laviana</option>
+        </select>
+        </label>
+
+        <input type="submit" value="Enviar Formulario">
+        </form>
+    </div>
+    <div id="exito" style="display:none">
+        Sus datos han sido recibidos con éxito.
+    </div>
+    <div id="fracaso" style="display:none">
+        Se ha producido un error durante el envío de datos.
+    </div>
+    
+<script src="myScript.js"></script>
+
+    
+</body>
+</html>
